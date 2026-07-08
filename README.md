@@ -77,12 +77,3 @@ asm-platform/
     └── ARCHITECTURE.md
 ```
 
-## Known limitations / next steps
-
-- No auth yet — this is single-tenant, meant for a local/private
-  deployment. Add an auth layer before exposing it to the internet.
-- No rate-limit safeguard against scanning targets outside the registered
-  org's root domain — worth adding server-side validation that a scan
-  target is actually a subdomain of the org before dispatching.
-- PDF export for the executive summary isn't wired up yet, but
-  `/reports/{org_id}/executive-summary` returns JSON shaped for it.
