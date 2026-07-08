@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-void text-ink font-display antialiased;
+}
+
+/* Ops-console feel: hairline borders, no soft shadows, minimal radius */
+.panel {
+  @apply bg-panel border border-line rounded;
+}
+
+.data-mono {
+  @apply font-mono tabular-nums;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #232B35;
+  border-radius: 4px;
+}
